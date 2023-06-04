@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="656.0" style="-fx-background-color: #EBDDD7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <Pane fx:id="welcomePane" prefHeight="77.0" prefWidth="656.0" style="-fx-background-color: #8C2B47;">
+         <children>
+            <Text fx:id="welcomeText" fill="WHITE" layoutX="42.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO METRO BUS SYSTEM">
+               <font>
+                  <Font name="Cooper Black" size="32.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="credentialsbox" layoutX="14.0" layoutY="98.0" prefHeight="505.0" prefWidth="269.0" style="-fx-background-color: #EBDDD7;">
+         <children>
+            <ImageView fx:id="logo" fitHeight="159.0" fitWidth="223.0" layoutX="26.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/logo.PNG" />
+               </image>
+            </ImageView>
+            <Text fx:id="tagline" layoutX="15.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login to your account or sign up!!" textAlignment="CENTER" wrappingWidth="238.0000015720725">
+               <font>
+                  <Font name="Cooper Black" size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="281.0" layoutY="98.0" prefHeight="505.0" prefWidth="348.0" style="-fx-background-color: #D1BB7C #D1BB7C;">
+         <children>
+            <Text fx:id="loginText" layoutX="119.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN">
+               <font>
+                  <Font name="Cooper Black" size="32.0" />
+               </font>
+            </Text>
+            <Text fx:id="usernameBox" layoutX="39.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:">
+               <font>
+                  <Font name="Cooper Black" size="19.0" />
+               </font>
+            </Text>
+            <Text fx:id="passwordBox" layoutX="39.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+               <font>
+                  <Font name="Cooper Black" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="usernameText" layoutX="39.0" layoutY="185.0" prefHeight="37.0" prefWidth="269.0" />
+            <PasswordField fx:id="passText" layoutX="39.0" layoutY="278.0" prefHeight="37.0" prefWidth="269.0" />
+            <Button fx:id="SignIn" layoutX="94.0" layoutY="364.0" mnemonicParsing="false" onAction="#LoggingIn" prefHeight="45.0" prefWidth="160.0" style="-fx-background-color: #8C2B47;" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="Cooper Black" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="SignUp" layoutX="94.0" layoutY="430.0" mnemonicParsing="false" onAction="#Register" prefHeight="45.0" prefWidth="160.0" style="-fx-background-color: #8C2B47;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="Cooper Black" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
